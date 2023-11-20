@@ -61,9 +61,12 @@ export default function Home() {
 
 
       <div className="items-start max-w-5xl w-full py-10">
+        {/*   eslint-disable-next-line react/no-unescaped-entities */}
         <h3 className='font-mono font-bold text-lg my-3'>hey, I'm weerachit 👋</h3>
 
+
         <p className='font-mono text-sm '>
+          {/*   eslint-disable-next-line react/no-unescaped-entities */}
           I'm a frontend developer,  a passionate and results-driven full-stack developer with expertise in front-end technologies such as React, React Native, Next.js, TypeScript, and JavaScript. On the back-end, I specialize in Node.js and Go, ensuring a seamless integration of the entire development stack.
         </p>
 
@@ -85,6 +88,7 @@ export default function Home() {
         <h3 className='font-mono font-bold text-lg my-3 border-b-[1px] border-gray-800 py-3'>my work</h3>
 
         <p className='font-mono text-sm  my-5'>
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
           On a mission to build products developers love, and along the way, teach the next generation of developers. Here's a summary of my work so far.
         </p>
 
