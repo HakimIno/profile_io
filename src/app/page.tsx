@@ -1,6 +1,7 @@
 'use client';
 
-import { Button, Card, CardFooter, CardHeader, Code, Image, Link, NextUIProvider, Snippet } from '@nextui-org/react';
+import { Button, Card, CardFooter, CardHeader, Code, Image, NextUIProvider, Snippet } from '@nextui-org/react';
+import Link from 'next/link';
 
 import { usePathname } from 'next/navigation';
 
@@ -54,15 +55,14 @@ const data_mockup = [
       "https://media.discordapp.net/attachments/909691381885333504/1239932650701983804/Screenshot_2024-05-14-20-27-26-385_host.exp.exponent.jpg?ex=6644b8c4&is=66436744&hm=dd5c083e356a3ccc9cb46c7a7d5ea1dbe768c0794f25a8668be0e0d1f0e80db9&=&format=webp&width=466&height=1034",
       "https://media.discordapp.net/attachments/909691381885333504/1239932652522442773/Screenshot_2024-05-14-20-25-08-233_host.exp.exponent.jpg?ex=6644b8c5&is=66436745&hm=bf6645c01b27feb3b296e65c863c0b0c6f88264c9f6836188efac53b283d8442&=&format=webp&width=466&height=1034",
       "https://media.discordapp.net/attachments/909691381885333504/1239932653000458291/Screenshot_2024-05-14-20-25-21-693_host.exp.exponent.jpg?ex=6644b8c5&is=66436745&hm=6b14a10c11c07c89d5fefded2098c0f02f1e9309066431220f87e2f1653eb983&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239932650198663228/Screenshot_2024-05-14-20-28-55-062_host.exp.exponent.jpg?ex=6644b8c4&is=66436744&hm=f7cb6f63e7eaf675ca9847a927de0c4bfe4f5e9417625eeb04adb8ca6b37a1f4&=&format=webp&width=466&height=1034",
+      // "https://media.discordapp.net/attachments/909691381885333504/1239932650198663228/Screenshot_2024-05-14-20-28-55-062_host.exp.exponent.jpg?ex=6644b8c4&is=66436744&hm=f7cb6f63e7eaf675ca9847a927de0c4bfe4f5e9417625eeb04adb8ca6b37a1f4&=&format=webp&width=466&height=1034",
     ]
   },
   {
-    title: "- Travel app 🌺",
+    title: "- Travel Appication 🍑",
     subtitle: "react native,firebase full-stack appication",
     github: "https://github.com/HakimIno/appication-travel.com",
     images: [
-
       "https://media.discordapp.net/attachments/909691381885333504/1239940916332990474/Screenshot_2024-05-14-20-59-25-380_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=dedf906d7f9d0563feb1f65d8b6dda308781596d0b7f1a6c9e41f4e173a251c0&=&format=webp&width=466&height=1034",
       "https://media.discordapp.net/attachments/909691381885333504/1239940916064817242/Screenshot_2024-05-14-21-00-15-332_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=956e4c478956063bf50e2f85ef0172a4e0add34ed6a5afeec48747196d4a5405&=&format=webp&width=466&height=1034",
       "https://media.discordapp.net/attachments/909691381885333504/1239940915750240417/Screenshot_2024-05-14-21-00-28-552_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=50c4fe956541cabb6af4d7e55593d05847d7ea605b456177c1dab9ec42d98df6&=&format=webp&width=466&height=1034",
@@ -70,7 +70,28 @@ const data_mockup = [
       "https://media.discordapp.net/attachments/909691381885333504/1239940915074957352/Screenshot_2024-05-14-21-00-59-366_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=d21bbc275bc08e63fe67d34e713b5b11bccb66b1ef87eb9359d5fb0458a37a6e&=&format=webp&width=466&height=1034",
       "https://media.discordapp.net/attachments/909691381885333504/1239940914688823296/Screenshot_2024-05-14-21-01-35-659_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=2138733c6a9f6a36de3aff3df2a7c0f0a697780a6e2b1d273df0df45806188b1&=&format=webp&width=466&height=1034",
       "https://media.discordapp.net/attachments/909691381885333504/1239940914378702948/Screenshot_2024-05-14-21-01-51-980_com.kimsnow33.travelapp.jpg?ex=6644c076&is=66436ef6&hm=2e798f2e96eefe6b494855083c92af3f48aaf2100d21b42669fd314b555a6c9a&=&format=webp&width=466&height=1034",
-
+      "https://media.discordapp.net/attachments/909691381885333504/1239953589754007678/Screenshot_2024-05-14-21-50-57-620_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=d71b2f0ee50f18e82b8a4fec5b1ac657714287ee672574d08b7540af0380f93b&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239953590043545650/Screenshot_2024-05-14-21-51-14-419_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=81ce5523675ea808ad420f52bb20cf0b9dc155c47de832ce4d08a514001fc79f&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239953590303588383/Screenshot_2024-05-14-21-51-29-865_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=88b52c87fae94cf8cfcd6a6a25a34ad96bd5e37f4af530de8103b2b667d8bc87&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239953590580285542/Screenshot_2024-05-14-21-51-56-124_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=86b2a90b43427ac40d7e0275469495be069110cf125c44aa783ed626d4e60022&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239953590903377920/Screenshot_2024-05-14-21-52-14-965_com.android.printspooler.jpg?ex=6644cc45&is=66437ac5&hm=8f175f7194c413cac5887e481b1283ee5874d3ee116c96689ad3976ebfb92d9e&=&format=webp&width=466&height=1034"
+    ]
+  },
+  {
+    title: "- Food Delivery Appication 🍔",
+    subtitle: "react-native,nodejs,aws-s3,docker, full-stack appication",
+    github: "https://github.com/HakimIno/appication-travel.com",
+    images: [
+      "https://media.discordapp.net/attachments/909691381885333504/1239955899536375829/1715698889629.jpg?ex=6644ce6b&is=66437ceb&hm=c94b7ca8773373ac068f17813a0244671dd5bb5307481e4b0601c830ce249aef&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955925943586919/1715698894643.jpg?ex=6644ce72&is=66437cf2&hm=5141947b549ef50242335f21fb7a6fec5419616efadc81da4baa40b5b24a5915&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955926165749853/1715698894710.jpg?ex=6644ce72&is=66437cf2&hm=5d33f19f7f76592adb42db6cc64c76f3ba1802fc85961671f1adfd79d5f1e3b6&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955899808743464/1715698889379.jpg?ex=6644ce6b&is=66437ceb&hm=34d878113b620cb3b6865ff2bd009d1b6503d5ed5a4cafc0a34aae79124a1d22&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955900161196154/1715698890061.jpg?ex=6644ce6b&is=66437ceb&hm=b67194bf839ace8c26bbcd013d5af2761cd5a12d1a6a0b945e82c2535f2d8dc4&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955898731069450/1715698889879.jpg?ex=6644ce6b&is=66437ceb&hm=0f6e4a336cf7ce71588dc8cc3b9149ca49f40e1a985d28f129fb749f1cd36ef9&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955899007762514/1715698889829.jpg?ex=6644ce6b&is=66437ceb&hm=5e5b1590d5a3d66993fb2467f000ea590e754a263a860e4f6c55cf32662fe9dc&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955898282016918/1715698889940.jpg?ex=6644ce6b&is=66437ceb&hm=089d17049355fd6db30cce47f52f93416e845367b3e1b9aa72b00edf422a1374&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955925679476817/1715698894554.jpg?ex=6644ce71&is=66437cf1&hm=3cdfbe88976301dfbf1f37153368b26dbc4b1a494dfba247a4700231602a9068&=&format=webp&width=466&height=1034",
+      "https://media.discordapp.net/attachments/909691381885333504/1239955926375731230/1715698894778.jpg?ex=6644ce72&is=66437cf2&hm=0867ba630ff6fd77408a6c6091519312c60f843a9d1934e1101d96c0b7e622bd&=&format=webp&width=466&height=1034"
     ]
   }
 ]
@@ -145,12 +166,26 @@ export default function Home() {
                     </p>
                   </ul>
                 </div>
-                <div className="grid grid-cols-6 gap-1 bg-[#242424] rounded-xl">
+                {/* <div className="grid grid-cols-6 gap-1 bg-[#242424] rounded-xl">
                   {item.images.map((image, index) => (
                     <div
                       key={index}
                       className={`relative ${(index + 1) % 4 === 0 || (index + 1) % 4 === 1 ? 'col-span-2 row-span-2' : ''
                         }`}
+                    >
+                      <Image
+                        isZoomed
+                        alt={"work-" + index}
+                        src={image}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div> */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2  bg-[#242424] rounded-xl">
+                  {item.images.map((image, index) => (
+                    <div
+                      key={index}
                     >
                       <Image
                         isZoomed
