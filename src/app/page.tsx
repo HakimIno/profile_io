@@ -132,8 +132,8 @@ export default function Home() {
 
 
           <div className="">
-            {data_mockup.map((item) => (
-              <div className="border-gray-800 py-6 border-b-[2px] ">
+            {data_mockup.map((item, index) => (
+              <div className="border-gray-800 py-6 border-b-[2px]" key={index}>
                 <div className="pb-6">
                   <strong className='flex items-center font-mono text-lg'>
                     {item.title}
@@ -144,8 +144,6 @@ export default function Home() {
                       {item.subtitle}
                     </p>
                   </ul>
-
-
                 </div>
                 <div className="grid grid-cols-6 gap-1 bg-[#242424] rounded-xl">
                   {item.images.map((image, index) => (
@@ -156,7 +154,7 @@ export default function Home() {
                     >
                       <Image
                         isZoomed
-                        alt={image}
+                        alt={"work-" + index}
                         src={image}
                         className="w-full h-full object-cover"
                       />
