@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Card, CardFooter, CardHeader, Code, Image, NextUIProvider, Snippet } from '@nextui-org/react';
+import { AccordionItem, Avatar, Button, Card, CardFooter, CardHeader, Code, Image, NextUIProvider, Snippet } from '@nextui-org/react';
 import Link from 'next/link';
 
 import { usePathname } from 'next/navigation';
@@ -49,13 +49,13 @@ const data_mockup = [
     subtitle: "react native design ui",
     github: "https://github.com/HakimIno/appication-ohi-ui",
     images: [
-      "https://media.discordapp.net/attachments/909691381885333504/1239932651968659559/Screenshot_2024-05-14-20-26-56-380_host.exp.exponent.jpg?ex=6644b8c5&is=66436745&hm=ab14dadbb38f1732e807f31b810337679b4da4ec7e9f26dc35dd7f8079b3314d&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239932651545169960/Screenshot_2024-05-14-20-27-10-450_host.exp.exponent.jpg?ex=6644b8c4&is=66436744&hm=e282f081fd4bb1577b9604a90af43544ebb5b05993d1d2d7c3a9b29e8b6804d9&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239932651129798676/Screenshot_2024-05-14-20-27-16-690_host.exp.exponent.jpg?ex=6644b8c4&is=66436744&hm=35e5e492dc12991c548866821dd6df8203c31c41f6c7e8570d309de59fb9360f&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239932650701983804/Screenshot_2024-05-14-20-27-26-385_host.exp.exponent.jpg?ex=6644b8c4&is=66436744&hm=dd5c083e356a3ccc9cb46c7a7d5ea1dbe768c0794f25a8668be0e0d1f0e80db9&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239932652522442773/Screenshot_2024-05-14-20-25-08-233_host.exp.exponent.jpg?ex=6644b8c5&is=66436745&hm=bf6645c01b27feb3b296e65c863c0b0c6f88264c9f6836188efac53b283d8442&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239932653000458291/Screenshot_2024-05-14-20-25-21-693_host.exp.exponent.jpg?ex=6644b8c5&is=66436745&hm=6b14a10c11c07c89d5fefded2098c0f02f1e9309066431220f87e2f1653eb983&=&format=webp&width=466&height=1034",
-      // "https://media.discordapp.net/attachments/909691381885333504/1239932650198663228/Screenshot_2024-05-14-20-28-55-062_host.exp.exponent.jpg?ex=6644b8c4&is=66436744&hm=f7cb6f63e7eaf675ca9847a927de0c4bfe4f5e9417625eeb04adb8ca6b37a1f4&=&format=webp&width=466&height=1034",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-26-56-380_host.exp.exponent.jpg?alt=media&token=91e84edd-a69d-4a03-b492-9b77b60a264d",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-27-10-450_host.exp.exponent.jpg?alt=media&token=34ca5e48-0826-4da2-8639-6b53de77bd98",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-27-16-690_host.exp.exponent.jpg?alt=media&token=a3471eb5-2d39-4298-93b4-ad1cbd63da82",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-27-26-385_host.exp.exponent.jpg?alt=media&token=29e57d02-f7aa-4baa-95ef-ffd44915c0e5",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-25-08-233_host.exp.exponent.jpg?alt=media&token=11d0764b-a2d2-475c-b0a8-7ef4567db4c0",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-25-21-693_host.exp.exponent.jpg?alt=media&token=0a9b8a8a-095a-4b7e-9c1e-d5bf32076c31",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-28-55-062_host.exp.exponent.jpg?alt=media&token=27e60cde-0037-4555-83a0-db5cac5f08bb"
     ]
   },
   {
@@ -63,18 +63,18 @@ const data_mockup = [
     subtitle: "react native,firebase full-stack appication",
     github: "https://github.com/HakimIno/appication-travel.com",
     images: [
-      "https://media.discordapp.net/attachments/909691381885333504/1239940916332990474/Screenshot_2024-05-14-20-59-25-380_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=dedf906d7f9d0563feb1f65d8b6dda308781596d0b7f1a6c9e41f4e173a251c0&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239940916064817242/Screenshot_2024-05-14-21-00-15-332_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=956e4c478956063bf50e2f85ef0172a4e0add34ed6a5afeec48747196d4a5405&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239940915750240417/Screenshot_2024-05-14-21-00-28-552_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=50c4fe956541cabb6af4d7e55593d05847d7ea605b456177c1dab9ec42d98df6&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239940915385339985/Screenshot_2024-05-14-21-00-48-633_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=e1575f9311006d28bb8b28f3877d4fed964ab26474b46bbf68b323a48d80e78c&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239940915074957352/Screenshot_2024-05-14-21-00-59-366_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=d21bbc275bc08e63fe67d34e713b5b11bccb66b1ef87eb9359d5fb0458a37a6e&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239940914688823296/Screenshot_2024-05-14-21-01-35-659_com.kimsnow33.travelapp.jpg?ex=6644c077&is=66436ef7&hm=2138733c6a9f6a36de3aff3df2a7c0f0a697780a6e2b1d273df0df45806188b1&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239940914378702948/Screenshot_2024-05-14-21-01-51-980_com.kimsnow33.travelapp.jpg?ex=6644c076&is=66436ef6&hm=2e798f2e96eefe6b494855083c92af3f48aaf2100d21b42669fd314b555a6c9a&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239953589754007678/Screenshot_2024-05-14-21-50-57-620_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=d71b2f0ee50f18e82b8a4fec5b1ac657714287ee672574d08b7540af0380f93b&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239953590043545650/Screenshot_2024-05-14-21-51-14-419_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=81ce5523675ea808ad420f52bb20cf0b9dc155c47de832ce4d08a514001fc79f&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239953590303588383/Screenshot_2024-05-14-21-51-29-865_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=88b52c87fae94cf8cfcd6a6a25a34ad96bd5e37f4af530de8103b2b667d8bc87&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239953590580285542/Screenshot_2024-05-14-21-51-56-124_com.kimsnow33.travelapp.jpg?ex=6644cc45&is=66437ac5&hm=86b2a90b43427ac40d7e0275469495be069110cf125c44aa783ed626d4e60022&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239953590903377920/Screenshot_2024-05-14-21-52-14-965_com.android.printspooler.jpg?ex=6644cc45&is=66437ac5&hm=8f175f7194c413cac5887e481b1283ee5874d3ee116c96689ad3976ebfb92d9e&=&format=webp&width=466&height=1034"
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-20-59-25-380_com.kimsnow33.travelapp.jpg?alt=media&token=107b61ae-4405-46f1-8356-119fb7509245",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-00-15-332_com.kimsnow33.travelapp.jpg?alt=media&token=4e82e77a-e3f0-4d73-a832-2ab278d46761",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-00-28-552_com.kimsnow33.travelapp.jpg?alt=media&token=828f6a00-a99d-443f-a034-de03bf6ca5d6",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-00-48-633_com.kimsnow33.travelapp.jpg?alt=media&token=3f4f4d96-28a1-4970-84f0-4ecb4b0059f8",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-00-59-366_com.kimsnow33.travelapp.jpg?alt=media&token=fdb3ad63-6b7d-46e5-bd15-2980b5a563a7",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-01-35-659_com.kimsnow33.travelapp.jpg?alt=media&token=0f0a090e-ab3a-40d3-891e-55f4f8dcad15",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-01-51-980_com.kimsnow33.travelapp.jpg?alt=media&token=660e348b-285a-4248-aa13-7c66174e79e4",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-50-57-620_com.kimsnow33.travelapp.jpg?alt=media&token=a5a4f9fd-3681-4787-ab2d-9a30d33ddd0f",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-51-14-419_com.kimsnow33.travelapp.jpg?alt=media&token=c5ea7cb9-4bb8-4f6c-879c-f08116bcc718",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-51-29-865_com.kimsnow33.travelapp.jpg?alt=media&token=dce152b6-c4f0-41f8-a406-3596b1dee074",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-51-56-124_com.kimsnow33.travelapp.jpg?alt=media&token=f4e8482e-1dd1-4e53-b334-e4bc058c7b6e",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2FScreenshot_2024-05-14-21-52-14-965_com.android.printspooler.jpg?alt=media&token=46616ad8-d0b7-462c-91aa-b9836893ee2a"
     ]
   },
   {
@@ -82,25 +82,46 @@ const data_mockup = [
     subtitle: "react-native,nodejs,aws-s3,docker, full-stack appication",
     github: "https://github.com/HakimIno/appication-travel.com",
     images: [
-      "https://media.discordapp.net/attachments/909691381885333504/1239955899536375829/1715698889629.jpg?ex=6644ce6b&is=66437ceb&hm=c94b7ca8773373ac068f17813a0244671dd5bb5307481e4b0601c830ce249aef&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955925943586919/1715698894643.jpg?ex=6644ce72&is=66437cf2&hm=5141947b549ef50242335f21fb7a6fec5419616efadc81da4baa40b5b24a5915&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955926165749853/1715698894710.jpg?ex=6644ce72&is=66437cf2&hm=5d33f19f7f76592adb42db6cc64c76f3ba1802fc85961671f1adfd79d5f1e3b6&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955899808743464/1715698889379.jpg?ex=6644ce6b&is=66437ceb&hm=34d878113b620cb3b6865ff2bd009d1b6503d5ed5a4cafc0a34aae79124a1d22&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955900161196154/1715698890061.jpg?ex=6644ce6b&is=66437ceb&hm=b67194bf839ace8c26bbcd013d5af2761cd5a12d1a6a0b945e82c2535f2d8dc4&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955898731069450/1715698889879.jpg?ex=6644ce6b&is=66437ceb&hm=0f6e4a336cf7ce71588dc8cc3b9149ca49f40e1a985d28f129fb749f1cd36ef9&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955899007762514/1715698889829.jpg?ex=6644ce6b&is=66437ceb&hm=5e5b1590d5a3d66993fb2467f000ea590e754a263a860e4f6c55cf32662fe9dc&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955898282016918/1715698889940.jpg?ex=6644ce6b&is=66437ceb&hm=089d17049355fd6db30cce47f52f93416e845367b3e1b9aa72b00edf422a1374&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955925679476817/1715698894554.jpg?ex=6644ce71&is=66437cf1&hm=3cdfbe88976301dfbf1f37153368b26dbc4b1a494dfba247a4700231602a9068&=&format=webp&width=466&height=1034",
-      "https://media.discordapp.net/attachments/909691381885333504/1239955926375731230/1715698894778.jpg?ex=6644ce72&is=66437cf2&hm=0867ba630ff6fd77408a6c6091519312c60f843a9d1934e1101d96c0b7e622bd&=&format=webp&width=466&height=1034"
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698889629.jpg?alt=media&token=b58fbbef-af56-4d5e-8b72-ff3036ba525f",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698889379.jpg?alt=media&token=1faf8ea2-e78b-4fa9-b383-e1e2ea97a74c",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698894710.jpg?alt=media&token=571b12fb-01ca-4ce1-ac75-1ef2f312935a",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698894643.jpg?alt=media&token=a92a9179-a15e-45fc-a940-0db596da4df7",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698890061.jpg?alt=media&token=f2a618b1-65c8-4a89-a599-99762c18a151",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698889940.jpg?alt=media&token=82c00905-9d07-46b5-b994-1209338ebe99",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698889879.jpg?alt=media&token=efef45f8-72ed-41f8-846a-96e145048fe5",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698894778.jpg?alt=media&token=1e5023ae-38ef-4779-b681-c6fced789813",
+      "https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F1715698894554.jpg?alt=media&token=e6139759-61ab-4c9f-954f-82460030217a"
     ]
   }
 ]
+
+
+const BannerWithAvatar = () => {
+  return (
+    <div className="relative w-full h-[200px] mb-5">
+      <Image
+        src="https://i.pinimg.com/originals/02/87/d3/0287d3ba8b3330fca99f69e2001d3168.gif"
+        alt="banner"
+        className="w-[2000px] h-[200px] object-fill"
+      />
+      <div className="absolute top-8 left-1/3 md:top-10 md:left-10 z-20">
+        <Avatar
+          isBordered
+          radius="md"
+          color="secondary"
+          src="https://firebasestorage.googleapis.com/v0/b/image-profile-d0415.appspot.com/o/Work%2F373603558_3271084813183244_1796661666035531303_n.jpg?alt=media&token=5b0bd825-b8b8-4d81-948d-3f6c2ee365eb"
+          className="w-[120px] h-[120px]"
+        />
+      </div>
+    </div>
+  );
+};
 
 export default function Home() {
   return (
     <NextUIProvider>
       <main className="flex flex-col items-center justify-between  p-7 md:p-16 bg-black">
-        <nav className="sticky max-w-full md:max-w-5xl w-full  md:flex items-center justify-between font-mono text-sm  border-b-[1px] border-gray-800 pb-3">
+        <nav className="flex sticky max-w-full md:max-w-5xl w-full items-center justify-between font-mono text-sm  border-b-[1px] border-gray-800 pb-3">
           <div className="bottom-0 left-0  w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <a
               className="pointer-events-none flex place-items-center gap-2 p-3 lg:pointer-events-auto text-xl"
@@ -112,15 +133,21 @@ export default function Home() {
             </a>
           </div>
           <div className="flex space-x-0">
-            {Object.entries(navItems).map(([path, { name }]) => {
+            {/* {Object.entries(navItems).map(([path, { name }]) => {
               return <NavItem key={path} path={path} name={name} />;
-            })}
+            })} */}
+            <a className="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-primary no-underline hover:opacity-80 active:opacity-disabled transition-opacity p-1" aria-label="Github" role="link" href="https://github.com/HakimIno" rel="noopener noreferrer" target="_blank"><svg height="24" viewBox="0 0 24 24" width="24" className="text-default-600 dark:text-default-500"><path clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" fill="currentColor" fill-rule="evenodd"></path></svg></a>
+            <a className="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-primary no-underline hover:opacity-80 active:opacity-disabled transition-opacity p-1" aria-label="Github" role="link" href="https://www.linkedin.com/in/weerachit-utnok-44b69922b/?fbclid=IwZXh0bgNhZW0CMTAAAR2XIImhR_pWvNlNlT_AlnUD1wpR9KPN_hY7kI-uxjhNmQjVuOMHkdrocSA_aem_AUNwbLTChvapFzEW8AWum-g22hhCaQKgCVY37GXaxVOXGALs0bZE7mMg1ajMgPOl5IMzQHJMXS9AV7P7YdAJfpCJ" rel="noopener noreferrer" target="_blank"><svg fill="#6b7280" height="20px" width="20px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" stroke="#cfcfcf"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_801_"> <path id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73 C77.16,101.969,74.922,99.73,72.16,99.73z"></path> <path id="XMLID_803_" d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4 c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"></path> <path id="XMLID_804_" d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599 c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319 c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995 C310,145.43,300.549,94.761,230.454,94.761z"></path> </g> </g></svg></a>
           </div>
         </nav>
 
 
         <div className="items-start max-w-5xl w-full py-10">
           {/*   eslint-disable-next-line react/no-unescaped-entities */}
+
+
+          {BannerWithAvatar()}
+
           <h3 className='font-mono font-bold text-lg my-3'>hey, I'm weerachit 👋</h3>
 
 
@@ -130,14 +157,15 @@ export default function Home() {
           </p>
 
 
-          <Card className="col-span-12 sm:col-span-4 h-[350px] w-full my-6">
-            <Image
-              removeWrapper
-              alt="Card background"
-              className="z-0 w-full h-full rounded-xl"
-              src="https://media2.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif?cid=ecf05e47w0k5440n911hxowkn6lmi98zh7ouadmdgcujjvzk&ep=v1_gifs_related&rid=giphy.gif&ct=g"
-            />
-          </Card>
+
+          {/* <Card className="col-span-12 sm:col-span-4 h-[350px] w-full my-6">
+              <Image
+                removeWrapper
+                alt="Card background"
+                className="z-0 w-full h-full rounded-xl"
+                src="https://media2.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif?cid=ecf05e47w0k5440n911hxowkn6lmi98zh7ouadmdgcujjvzk&ep=v1_gifs_related&rid=giphy.gif&ct=g"
+              />
+            </Card> */}
 
           <p className='font-mono text-sm '>
             I create educational content for developers, teaching them about web development, JavaScript and TypeScript, React and Next.js, and more. This comes in all forms: blog posts, videos, tweets, conference talks, and workshops. You can watch some of my favorites below.
@@ -150,7 +178,6 @@ export default function Home() {
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             On a mission to build products developers love, and along the way, teach the next generation of developers. Here's a summary of my work so far.
           </p>
-
 
           <div className="">
             {data_mockup.map((item, index) => (
@@ -166,22 +193,6 @@ export default function Home() {
                     </p>
                   </ul>
                 </div>
-                {/* <div className="grid grid-cols-6 gap-1 bg-[#242424] rounded-xl">
-                  {item.images.map((image, index) => (
-                    <div
-                      key={index}
-                      className={`relative ${(index + 1) % 4 === 0 || (index + 1) % 4 === 1 ? 'col-span-2 row-span-2' : ''
-                        }`}
-                    >
-                      <Image
-                        isZoomed
-                        alt={"work-" + index}
-                        src={image}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div> */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2  bg-[#242424] rounded-xl">
                   {item.images.map((image, index) => (
                     <div
