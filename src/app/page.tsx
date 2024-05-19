@@ -1,46 +1,13 @@
 'use client';
 
-import { AccordionItem, Avatar, Button, Card, CardFooter, CardHeader, Code, Image, NextUIProvider, Snippet } from '@nextui-org/react';
-import Link from 'next/link';
+import { Avatar, Image, NextUIProvider } from '@nextui-org/react';
 
-import { usePathname } from 'next/navigation';
+import { Lilita_One } from 'next/font/google'
 
-const navItems = {
-  '/': {
-    name: 'Home',
-  },
-  '/work': {
-    name: 'work',
-  },
-  '/blog': {
-    name: 'blog',
-  },
-  '/contact': {
-    name: 'contact',
-  },
-};
-
-function NavItem({ path, name }: { path: string; name: string }) {
-  let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
-  }
-  return (
-    <Link
-      key={path}
-      href={path}
-    >
-      <span className="pointer-events-none flex place-items-center gap-2 p-3 lg:pointer-events-auto" >
-        {name}
-      </span>
-    </Link>
-  );
-}
-
-const images = Array.from({ length: 7 }, (_, index) => ({
-  src: `https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg`,
-  alt: `Fruit ${index + 1}`
-}));
+const lilita_One = Lilita_One({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 
 const data_mockup = [
@@ -124,8 +91,8 @@ export default function Home() {
         <nav className="flex sticky max-w-full md:max-w-5xl w-full items-center justify-between font-mono text-sm  border-b-[1px] border-gray-800 pb-3">
           <div className="bottom-0 left-0  w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <a
-              className="pointer-events-none flex place-items-center gap-2 p-3 lg:pointer-events-auto text-xl"
-              href=""
+              className="pointer-events-none flex place-items-center gap-2 p-3 lg:pointer-events-auto text-xl "
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
