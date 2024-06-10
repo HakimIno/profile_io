@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, Image, NextUIProvider } from '@nextui-org/react';
+import { Accordion, AccordionItem, Avatar, Card, CardBody, Image, NextUIProvider, Tab, Tabs } from '@nextui-org/react';
 
 const data_mockup = [
   {
@@ -61,7 +61,7 @@ export default function Home() {
     <NextUIProvider>
       <main className="flex flex-col items-center justify-between  p-7 md:p-16 bg-black">
         <nav className="flex sticky max-w-full md:max-w-5xl w-full items-center justify-between font-mono text-sm  border-b-[1px] border-gray-800 pb-3">
-          <div className="bottom-0 left-0  w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+          <div className="bottom-0 left-0  w-full items-end justify-center bg-gradient-to-t">
             <a
               className="pointer-events-none flex place-items-center gap-2 p-3 lg:pointer-events-auto text-xl "
               href="/"
@@ -109,9 +109,8 @@ export default function Home() {
           <p className='font-mono text-sm  my-5'>
             On a mission to build products developers love, and along the way, teach the next generation of developers. Here's a summary of my work so far.
           </p>
-
           <div className="">
-            {data_mockup.map((item, index) => (
+            {/* {data_mockup.map((item, index) => (
               <div className="border-gray-800 py-6 border-b-[2px]" key={index}>
                 <div className="pb-6">
                   <strong className='flex items-center font-mono text-lg'>
@@ -139,7 +138,80 @@ export default function Home() {
                   ))}
                 </div>
               </div>
+            ))} */}
+
+            {data_mockup.map((item, index) => (
+              // <div className="border-gray-800 py-6 border-b-[2px]" key={index}>
+              <Accordion isCompact variant="bordered" motionProps={{
+                variants: {
+                  enter: {
+                    y: 0,
+                    opacity: 1,
+                    height: "auto",
+                    transition: {
+                      height: {
+                        type: "spring",
+                        stiffness: 500,
+                        damping: 30,
+                        duration: 1,
+                      },
+                      opacity: {
+                        easings: "ease",
+                        duration: 1,
+                      },
+                    },
+                  },
+                  exit: {
+                    y: -10,
+                    opacity: 0,
+                    height: 0,
+                    transition: {
+                      height: {
+                        easings: "ease",
+                        duration: 0.25,
+                      },
+                      opacity: {
+                        easings: "ease",
+                        duration: 0.3,
+                      },
+                    },
+                  },
+                },
+              }}>
+                <AccordionItem
+                  key={index}
+                  aria-label={item.title}
+                  subtitle={
+                    <p className="flex text-gray-500 font-mono text-sm">
+                      {item.subtitle}
+                    </p>
+                  }
+                  title={
+                    <h4 className="flex text-white font-mono text-sm">
+                      {item.title}
+                    </h4>
+                  }
+                  className='text-white'>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2  bg-[#242424] rounded-xl">
+                    {item.images.map((image, index) => (
+                      <div
+                        key={index}
+                      >
+                        <Image
+                          isZoomed
+                          alt={"work-" + index}
+                          src={image}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </AccordionItem>
+              </Accordion>
+              // </div>
             ))}
+
+
           </div>
         </div>
       </main>
