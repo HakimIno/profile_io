@@ -141,74 +141,74 @@ export default function Home() {
             ))} */}
 
             {data_mockup.map((item, index) => (
-              // <div className="border-gray-800 py-6 border-b-[2px]" key={index}>
-              <Accordion isCompact variant="bordered" motionProps={{
-                variants: {
-                  enter: {
-                    y: 0,
-                    opacity: 1,
-                    height: "auto",
-                    transition: {
-                      height: {
-                        type: "spring",
-                        stiffness: 500,
-                        damping: 30,
-                        duration: 1,
+              <div className="border-gray-900 py-2 border-b-[1px]" key={index}>
+                <Accordion isCompact variant="bordered" motionProps={{
+                  variants: {
+                    enter: {
+                      y: 0,
+                      opacity: 1,
+                      height: "auto",
+                      transition: {
+                        height: {
+                          type: "spring",
+                          stiffness: 500,
+                          damping: 30,
+                          duration: 1,
+                        },
+                        opacity: {
+                          easings: "ease",
+                          duration: 1,
+                        },
                       },
-                      opacity: {
-                        easings: "ease",
-                        duration: 1,
+                    },
+                    exit: {
+                      y: -10,
+                      opacity: 0,
+                      height: 0,
+                      transition: {
+                        height: {
+                          easings: "ease",
+                          duration: 0.25,
+                        },
+                        opacity: {
+                          easings: "ease",
+                          duration: 0.3,
+                        },
                       },
                     },
                   },
-                  exit: {
-                    y: -10,
-                    opacity: 0,
-                    height: 0,
-                    transition: {
-                      height: {
-                        easings: "ease",
-                        duration: 0.25,
-                      },
-                      opacity: {
-                        easings: "ease",
-                        duration: 0.3,
-                      },
-                    },
-                  },
-                },
-              }}>
-                <AccordionItem
-                  key={index}
-                  aria-label={item.title}
-                  subtitle={
-                    <p className="flex text-gray-500 font-mono text-sm">
-                      {item.subtitle}
-                    </p>
-                  }
-                  title={
-                    <h4 className="flex text-white font-mono text-sm">
-                      {item.title}
-                    </h4>
-                  }
-                  className='text-white'>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2  bg-[#242424] rounded-xl">
-                    {item.images.map((image, index) => (
-                      <div
-                        key={index}
-                      >
-                        <Image
-                          isZoomed
-                          alt={"work-" + index}
-                          src={image}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </AccordionItem>
-              </Accordion>
-              // </div>
+                }}>
+                  <AccordionItem
+                    key={index}
+                    aria-label={item.title}
+                    subtitle={
+                      <p className="flex text-gray-500 font-mono text-sm">
+                        {item.subtitle}
+                      </p>
+                    }
+                    title={
+                      <h4 className="flex text-white font-mono text-sm">
+                        {item.title}
+                      </h4>
+                    }
+                    className='text-white'>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2  bg-[#242424] rounded-xl">
+                      {item.images.map((image, index) => (
+                        <div
+                          key={index}
+                        >
+                          <Image
+                            isZoomed
+                            alt={"work-" + index}
+                            src={image}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </AccordionItem>
+                </Accordion>
+              </div>
             ))}
 
 
